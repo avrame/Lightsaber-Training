@@ -1,6 +1,6 @@
 # Lightsaber VR Thing
 
-Executable: https://dl.dropboxusercontent.com/u/325187/Lightsaber.exe
+Executable: https://dl.dropboxusercontent.com/u/325187/Lightsaber.zip
 
 Touch R2D2 to start. The grip buttons pick up the lightsaber. The trigger turns it on.
 
