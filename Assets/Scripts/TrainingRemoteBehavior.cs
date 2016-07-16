@@ -6,14 +6,12 @@ using VRTK;
 public class TrainingRemoteBehavior : VRTK_InteractableObject {
 
     private VRTK_ControllerActions controllerActions;
-    private Rigidbody rb;
     private Vector3 moveForce = Vector3.zero;
     private float moveTime = 0;
 
     // Use this for initialization
     protected override void Start() {
         base.Start();
-        rb = GetComponent<Rigidbody>();
     }
 
     protected override void FixedUpdate() {

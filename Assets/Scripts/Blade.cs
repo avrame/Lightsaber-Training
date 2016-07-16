@@ -1,12 +1,11 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class Blade : MonoBehaviour {
 
     public float extendSpeed;
 
     private GameObject blade;
-    private Vector2 beamLimits = new Vector2(0f, 1f);
+    private Vector2 beamLimits = new Vector2(0f, 2f);
     private float currentBeamSize;
     private float bladeExtendSpeed = 0f;
 
@@ -22,7 +21,7 @@ public class Blade : MonoBehaviour {
     void Start () {
         blade = this.gameObject;
         currentBeamSize = beamLimits.x;
-        blade.transform.localScale = new Vector3(1f, currentBeamSize, 1f);
+        blade.transform.localScale = new Vector3(2f, currentBeamSize, 2f);
         //setBladeSize();
     }
 	
@@ -33,6 +32,6 @@ public class Blade : MonoBehaviour {
 
     private void setBladeSize () {
         currentBeamSize = Mathf.Clamp(blade.transform.localScale.y + (bladeExtendSpeed * Time.deltaTime), beamLimits.x, beamLimits.y);
-        blade.transform.localScale = new Vector3(1f, currentBeamSize, 1f);
+        blade.transform.localScale = new Vector3(2f, currentBeamSize, 2f);
     }
 }
